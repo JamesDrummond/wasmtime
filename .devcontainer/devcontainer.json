@@ -4,7 +4,7 @@
   "remoteEnv": {
     "PATH": "${containerEnv:PATH}:/usr/local/lib/wasi-sdk-17.0/bin"
   },
-  "postCreateCommand": "./.devcontainer/postCreateCommand.sh",
+  "postCreateCommand": "/usr/bin/bash ./.devcontainer/postCreateCommand.sh",
   "features": {
       "devwasm.azurecr.io/dev-wasm/dev-wasm-feature/wasmtime-wasi:0.0.4": {
           "version": "17"
